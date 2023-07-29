@@ -1,0 +1,320 @@
+body
+{
+background-color:rgb(78, 151, 173);
+}
+a{
+	float: left;
+	margin-left: 50px;
+}
+#header
+{
+    border: 1px solid black;
+    height: 150px;
+    margin: auto;
+    width: 1200px;
+    
+}
+#Menu
+{
+    border: 2px solid black;
+    height: 40px;
+}
+#corps
+{
+    border: 1px solid black;
+	height:3000px;
+   
+}
+
+#haut_gauche
+{
+	border: 1px solid black;
+	height: 495px;
+	width:750px;
+}
+#haut_droite
+{
+	border: 1px solid black;
+	height: 490px;
+	width: 472px;
+	margin-left: 760px;
+	margin-top: -496px;
+}
+#footer
+{
+    border: 1px solid black;
+    height: 200px;
+    background-color: white;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background-color: #ffffff;
+
+/* for pull-down menu to work in IE6*/
+behavior:url("csshover2.htc");
+
+}
+
+/* pull-down mainmenu css */
+.mainmenu{
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+.mainmenu ul {
+	float: left;
+	width: 100%;
+	list-style: none;
+	line-height: 1;
+	color:#FFFF00;
+	background: #fff;
+	padding: 0;
+	
+	border-width: 1px 0;
+	margin: 0 0 1em 0;
+}
+
+.mainmenu a, .mainmenu a:visited {
+	display: block;
+font-family:Arial, Helvetica, sans-serif;font-size:0.8em;font-weight:bold;font-style:normal;text-decoration:underline;
+	color: #000;
+	text-decoration: none;
+	padding: 1em 1em;
+}
+.mainmenu ul ul a{
+	width:100%;
+	height:100%;
+}
+.mainmenu ul a{
+	width:1%;
+}
+
+
+.mainmenu li  {
+	float: left;
+	margin:0;
+	padding:0;
+}
+
+.mainmenu ul li {float:left; position:relative;  }
+.mainmenu ul li a {white-space:nowrap;}
+	
+.mainmenu li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width:15em;	
+	
+	background: #000080;
+	font-weight: normal;
+	border-width: 1px;
+	margin: 0;
+}
+
+.mainmenu li li {
+	width:15em ;
+}
+
+.mainmenu li li a{
+	width:13em ;
+}
+
+.mainmenu li ul  {
+	margin: 0;
+}
+.mainmenu li ul ul {
+	margin: -2.8em 0 0 13.5em;
+}
+.ul_ch, 
+.mainmenu li:hover ul ul,
+.mainmenu li li:hover ul ul,
+.mainmenu li li li:hover ul ul,
+.mainmenu li li li li:hover ul ul,
+.mainmenu li li li li li:hover ul ul
+{
+	left: -999em;
+}
+.mainmenu li:hover ul,
+.mainmenu li li:hover ul,
+.mainmenu li li li:hover ul,
+.mainmenu li li li li:hover ul,
+.mainmenu li li li li li:hover ul
+{
+	left: auto;
+}
+.mainmenu li:hover>ul.ul_ch   
+{
+	left: auto;
+}
+
+.mainmenu li:hover a,.mainmenu li:hover a:visited,.mainmenu li:hover a:hover,.mainmenu li a:hover{
+	color:blue;
+}
+.mainmenu li:hover li a, .mainmenu li li:hover li a, 
+.mainmenu li li li:hover li a, .mainmenu li li li li:hover li a,
+.mainmenu li:hover li a:visited, .mainmenu li li:hover li a:visited, 
+.mainmenu li li li:hover li a:visited, .mainmenu li li li li:hover li a:visited
+{
+	color:#FFFF00;
+}
+.mainmenu li li:hover, .mainmenu li li li:hover, 
+.mainmenu li li li li:hover , .mainmenu li li li li li:hover , .mainmenu li li li li li li:hover 
+{
+	background: #B90000;
+	z-index:9999;
+}
+.mainmenu li li:hover a,.mainmenu li li li:hover a, 
+.mainmenu li li li li:hover a, .mainmenu li li li li li:hover a
+{
+	color: #FFFF00; 
+}
+
+.mainmenu ul ul a, .mainmenu ul ul a:visited,
+.mainmenu li li a, .mainmenu li li a:visited
+{
+	color: #FFFF00;
+}
+.mainmenu ul ul a:hover,
+.mainmenu li:hover li:hover a,.mainmenu li:hover li:hover a:visited ,
+.mainmenu li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover a:visited,
+.mainmenu li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover a:visited ,
+.mainmenu li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a:visited{
+	color: #FFFF00;
+}
+.mainmenu li:hover li:hover li a,.mainmenu li:hover li:hover li a:visited ,
+.mainmenu li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li:hover li a:visited{
+	color: #FFFF00;
+}
+.comite{
+	width: 1300px;
+	height: 800px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+img{
+	float: block;
+	margin: 25px;
+}
+#comite3{
+	width: 1300px;
+	height: 700px;
+	background-color: rgb(87, 156, 153);
+	color: rgb(39, 4, 4);
+	text-align: center;
+	border: 2px solid  blue;
+}
+.propos{
+	float: left;
+}
+h1{
+	text-align: center;
+}
+#gauche{
+	border: 2px solid blue;
+	width: 500px;
+	height: 400px;
+	margin-left: 800px;
+	text-align: center;
+}
+input{
+	display: block;
+	padding: 5px;
+	width: 95%;
+	margin: 10px;
+	font-size: 95%;
+}
+button{
+	background-color: blue;
+	color: white;
+	width: 95%;
+	margin: 20px;
+
+}
+.pied{
+    background-color: none;
+	display: inline-block;
+	width: 305px;
+	text-align: left;
+	margin-top: 50px;
+    color: black;
+}
+.cop{
+	text-align: center;
+}
+.h1{
+	color: #000080;
+}
+.Titre1{
+	
+	color: black;
+    text-align: center;
+}
+.reserve{
+    background-image: url(FONT.jpg);
+    height: 500px;
+}
+form {
+    width: 600px;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1b1818;
+}
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 250PX;
+    padding: 2px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+label {
+    color: #000;
+    font-size: 18px;
+    padding: 12px;
+}
+button {
+    float: center;
+    background: rgb(35, 174, 202);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 550px;
+    width: 250PX;
+}
+button:hover{
+    
+    background-color: rgb(141, 138, 132);
+    color: orange;
+
+}
+.error {
+   background: #F2DEDE;
+   color: #0c0101;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+#actualite{
+	width: 1350px;
+	height: 1700px;
+}
